@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-09-23T12:57:17 IST" name="Master Suite" finished-at="2024-09-23T12:57:23 IST" duration-ms="5636">
+    <groups>
+      <group name="Sanity">
+        <method signature="TC02_LoginTest.verifyLogin()[pri:0, instance:testCases.TC02_LoginTest@5b619d14]" name="verifyLogin" class="testCases.TC02_LoginTest"/>
+      </group> <!-- Sanity -->
+    </groups>
+    <test started-at="2024-09-23T12:57:17 IST" name="Test" finished-at="2024-09-23T12:57:23 IST" duration-ms="5636">
+      <class name="testCases.TC02_LoginTest">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC02_LoginTest@5b619d14]" started-at="2024-09-23T12:57:18 IST" name="setup" finished-at="2024-09-23T12:57:22 IST" duration-ms="4004" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyLogin()[pri:0, instance:testCases.TC02_LoginTest@5b619d14]" started-at="2024-09-23T12:57:22 IST" name="verifyLogin" finished-at="2024-09-23T12:57:23 IST" duration-ms="946" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC02_LoginTest@5b619d14]" started-at="2024-09-23T12:57:23 IST" name="tearDown" finished-at="2024-09-23T12:57:23 IST" duration-ms="526" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC02_LoginTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Master Suite -->
+</testng-results>

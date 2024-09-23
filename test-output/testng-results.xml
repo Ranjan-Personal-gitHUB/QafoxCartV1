@@ -2,15 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-14T23:23:03 IST" name="Master Suite" finished-at="2024-09-14T23:23:16 IST" duration-ms="12928">
+  <suite started-at="2024-09-23T19:54:54 IST" name="Master Suite" finished-at="2024-09-23T19:55:02 IST" duration-ms="8038">
     <groups>
-      <group name="Sanity">
-        <method signature="TC02_LoginTest.verifyLogin()[pri:0, instance:testCases.TC02_LoginTest@332a7fce]" name="verifyLogin" class="testCases.TC02_LoginTest"/>
-      </group> <!-- Sanity -->
     </groups>
-    <test started-at="2024-09-14T23:23:03 IST" name="Test" finished-at="2024-09-14T23:23:16 IST" duration-ms="12928">
-      <class name="testCases.TC02_LoginTest">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC02_LoginTest@332a7fce]" started-at="2024-09-14T23:23:03 IST" name="setup" finished-at="2024-09-14T23:23:13 IST" duration-ms="9691" status="PASS">
+    <test started-at="2024-09-23T19:54:54 IST" name="Test" finished-at="2024-09-23T19:55:02 IST" duration-ms="8038">
+      <class name="testCases.TC04_JavascriptExecutor_Test">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC04_JavascriptExecutor_Test@549621f3]" started-at="2024-09-23T19:54:54 IST" name="setup" finished-at="2024-09-23T19:54:57 IST" duration-ms="3028" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -26,15 +23,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyLogin()[pri:0, instance:testCases.TC02_LoginTest@332a7fce]" started-at="2024-09-14T23:23:13 IST" name="verifyLogin" finished-at="2024-09-14T23:23:15 IST" duration-ms="1879" status="PASS">
+        <test-method signature="login()[pri:0, instance:testCases.TC04_JavascriptExecutor_Test@549621f3]" started-at="2024-09-23T19:54:57 IST" name="login" finished-at="2024-09-23T19:55:01 IST" duration-ms="4247" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC02_LoginTest@332a7fce]" started-at="2024-09-14T23:23:15 IST" name="tearDown" finished-at="2024-09-14T23:23:16 IST" duration-ms="1102" status="PASS">
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC04_JavascriptExecutor_Test@549621f3]" started-at="2024-09-23T19:55:01 IST" name="tearDown" finished-at="2024-09-23T19:55:02 IST" duration-ms="583" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testCases.TC02_LoginTest -->
+      </class> <!-- testCases.TC04_JavascriptExecutor_Test -->
     </test> <!-- Test -->
   </suite> <!-- Master Suite -->
 </testng-results>

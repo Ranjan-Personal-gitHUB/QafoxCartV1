@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 // instead of creating constr in every class , move the code here and extend this class 
 public class BasePage {
 	
-	WebDriver driver;
+	public WebDriver driver;
 	
 	public BasePage(WebDriver driver)
 	{

@@ -1,45 +1,33 @@
-2024-09-23 19:33:32.250 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-2024-09-23 19:33:32.263 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-2024-09-23 19:33:32.263 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-2024-09-23 19:33:32.263 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-2024-09-23 19:33:32.271 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
-  C:\Users\Admin\AppData\Local\Temp\testng-eclipse-1347297730\testng-customsuite.xml
-
-2024-09-23 19:33:32.292 [main] INFO  org.testng.internal.Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 3 ms.
-2024-09-23 19:33:32.510 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.jq.Main@2d0566ba: 121 ms
-2024-09-23 19:33:32.551 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.FailedReporter@1bc53649: 40 ms
-2024-09-23 19:33:32.573 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@6f0628de: 21 ms
-2024-09-23 19:33:32.590 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@1cefc4b3: 17 ms
-2024-09-23 19:33:32.607 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@1e53135d: 16 ms
-2024-09-23 19:33:32.607 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@7674a051: 0 ms
-2024-09-23 19:34:05.728 [main] DEBUG org.testng.TestNG - suiteXmlPath: "D:\OIT\BackendWorkspace\QafoxCartV1\master.xml"
-2024-09-23 19:34:05.941 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+2024-09-23 23:29:23.928 [main] INFO  testCases.TC04_JSE_LoginTest - Clicked on MyAccount Link
+2024-09-23 23:29:29.536 [main] INFO  testCases.TC04_JSE_LoginTest - Clicked on Login Link
+2024-09-23 23:29:35.305 [main] INFO  testCases.TC04_JSE_LoginTest - ****** Finished TC02_LoginTest ******
+2024-09-23 23:30:41.812 [main] DEBUG org.testng.TestNG - suiteXmlPath: "D:\OIT\BackendWorkspace\QafoxCartV1\master.xml"
+2024-09-23 23:30:42.017 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
   D:\OIT\BackendWorkspace\QafoxCartV1\master.xml
 
-2024-09-23 19:34:10.053 [main] INFO  testCases.TC02_LoginTest - ****** Starting TC02_LoginTest ******
-2024-09-23 19:34:10.149 [main] INFO  testCases.TC02_LoginTest - Clicked on MyAccount Link
-2024-09-23 19:34:10.356 [main] INFO  testCases.TC02_LoginTest - Clicked on Login Link
-2024-09-23 19:34:10.517 [main] INFO  testCases.TC02_LoginTest - Clicked on Login page Login Link
-2024-09-23 19:34:11.005 [main] INFO  testCases.TC02_LoginTest - isValidLogin is true
-2024-09-23 19:34:11.007 [main] INFO  testCases.TC02_LoginTest - ****** Finished TC02_LoginTest ******
-2024-09-23 19:48:43.517 [main] DEBUG org.testng.TestNG - suiteXmlPath: "D:\OIT\BackendWorkspace\QafoxCartV1\master.xml"
-2024-09-23 19:49:46.543 [main] DEBUG org.testng.TestNG - suiteXmlPath: "D:\OIT\BackendWorkspace\QafoxCartV1\master.xml"
-2024-09-23 19:49:46.755 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+2024-09-23 23:30:46.213 [main] INFO  testCases.TC04_JSE_LoginTest - ****** Starting TC04_JSE_LoginTest ******
+2024-09-23 23:30:46.232 [main] INFO  testCases.TC04_JSE_LoginTest - MyAccountWebElmnt() is [[ChromeDriver: chrome on windows (f2e5da200113507be12facbdf3f2f28c)] -> xpath: //span[normalize-space()='My Account']]
+2024-09-23 23:30:46.256 [main] INFO  testCases.TC04_JSE_LoginTest - Clicked on MyAccount Link
+2024-09-23 23:30:51.547 [main] INFO  testCases.TC04_JSE_LoginTest - Clicked on Login Link
+2024-09-23 23:30:57.014 [main] INFO  testCases.TC04_JSE_LoginTest - ****** Finished TC02_LoginTest ******
+2024-09-23 23:39:54.634 [main] DEBUG org.testng.TestNG - suiteXmlPath: "D:\OIT\BackendWorkspace\QafoxCartV1\master.xml"
+2024-09-23 23:39:54.891 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
   D:\OIT\BackendWorkspace\QafoxCartV1\master.xml
 
-2024-09-23 19:52:27.524 [main] DEBUG org.testng.TestNG - suiteXmlPath: "D:\OIT\BackendWorkspace\QafoxCartV1\master.xml"
-2024-09-23 19:52:27.730 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+2024-09-23 23:40:05.573 [main] INFO  testCases.TC04_JSE_LoginTest - ****** Starting TC04_JSE_LoginTest ******
+2024-09-23 23:40:05.596 [main] INFO  testCases.TC04_JSE_LoginTest - MyAccountWebElmnt() is [[ChromeDriver: chrome on windows (0b920f6f68162a23365095c2a848b002)] -> xpath: //span[normalize-space()='My Account']]
+2024-09-23 23:40:05.619 [main] INFO  testCases.TC04_JSE_LoginTest - Clicked on MyAccount Link
+2024-09-23 23:40:10.825 [main] INFO  testCases.TC04_JSE_LoginTest - Clicked on Login Link
+2024-09-23 23:40:11.338 [main] INFO  testCases.TC04_JSE_LoginTest - isValidLogin is [[ChromeDriver: chrome on windows (0b920f6f68162a23365095c2a848b002)] -> xpath: //h2[text()='My Account']]
+2024-09-23 23:40:16.366 [main] INFO  testCases.TC04_JSE_LoginTest - ****** Finished TC02_LoginTest ******
+2024-09-23 23:41:22.255 [main] DEBUG org.testng.TestNG - suiteXmlPath: "D:\OIT\BackendWorkspace\QafoxCartV1\master.xml"
+2024-09-23 23:41:22.473 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
   D:\OIT\BackendWorkspace\QafoxCartV1\master.xml
 
-2024-09-23 19:54:00.895 [main] DEBUG org.testng.TestNG - suiteXmlPath: "D:\OIT\BackendWorkspace\QafoxCartV1\master.xml"
-2024-09-23 19:54:01.098 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
-  D:\OIT\BackendWorkspace\QafoxCartV1\master.xml
-
-2024-09-23 19:54:20.902 [main] DEBUG org.testng.TestNG - suiteXmlPath: "D:\OIT\BackendWorkspace\QafoxCartV1\master.xml"
-2024-09-23 19:54:21.127 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
-  D:\OIT\BackendWorkspace\QafoxCartV1\master.xml
-
-2024-09-23 19:54:53.788 [main] DEBUG org.testng.TestNG - suiteXmlPath: "D:\OIT\BackendWorkspace\QafoxCartV1\master.xml"
-2024-09-23 19:54:54.037 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
-  D:\OIT\BackendWorkspace\QafoxCartV1\master.xml
-
+2024-09-23 23:41:26.518 [main] INFO  testCases.TC04_JSE_LoginTest - ****** Starting TC04_JSE_LoginTest ******
+2024-09-23 23:41:26.538 [main] INFO  testCases.TC04_JSE_LoginTest - MyAccountWebElmnt() is [[ChromeDriver: chrome on windows (88af376f5ca25043fbce3e3e17b6da4a)] -> xpath: //span[normalize-space()='My Account']]
+2024-09-23 23:41:26.556 [main] INFO  testCases.TC04_JSE_LoginTest - Clicked on MyAccount Link
+2024-09-23 23:41:31.794 [main] INFO  testCases.TC04_JSE_LoginTest - Clicked on Login Link
+2024-09-23 23:41:32.323 [main] INFO  testCases.TC04_JSE_LoginTest - isValidLogin is [[ChromeDriver: chrome on windows (88af376f5ca25043fbce3e3e17b6da4a)] -> xpath: //h2[text()='My Account']]
+2024-09-23 23:41:32.348 [main] INFO  testCases.TC04_JSE_LoginTest - ValidLogintrue
+2024-09-23 23:41:37.352 [main] INFO  testCases.TC04_JSE_LoginTest - ****** Finished TC02_LoginTest ******

@@ -15,31 +15,48 @@ public class HomePage extends BasePage {
 	}
 
 	// Web elements List
-	@FindBy(xpath = "//span[normalize-space()='My Account']")
-	WebElement lnkMyaccount;
-
-	@FindBy(xpath = "//a[normalize-space()='Register']")
-	WebElement lnkRegister;
+	/*
+	 * @FindBy(xpath = "//span[normalize-space()='My Account']") WebElement
+	 * lnkMyaccount;
+	 * 
+	 * @FindBy(xpath = "//a[normalize-space()='Register']") WebElement lnkRegister;
+	 * 
+	 * 
+	 * @FindBy(linkText = "Login") WebElement lnkLogin;
+	 */
 	
-
-	@FindBy(linkText = "Login")
-	WebElement lnkLogin;
+	WebElement lnkMyaccount =driver.findElement(By.xpath("//span[normalize-space()='My Account']"));
+	
+	WebElement lnkRegister =driver.findElement(By.xpath("//a[normalize-space()='Register']"));
+	
+	WebElement lnkLogin =driver.findElement(By.linkText("Login"));
 	
 
 	// Corresponding Action methods for Web elments
 	public void clickMyAccount() {
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		lnkMyaccount.click();
 	}
 
 	public void clickRegister() {
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		lnkRegister.click();
 	}
 	
 	public void clickLogin()
 	{
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		lnkLogin.click();
+	}
+	
+	// Below added for JavaScriptExecutor Framework to run in Jenkins
+	public WebElement getMyAccountWebElmnt() {
+		logger.info("lnkMyaccount"+lnkMyaccount);
+		return lnkMyaccount;
+	}
+	
+	public WebElement getRegisterWebElmnt() {
+		return lnkRegister;
+	}
+	
+	public WebElement getLoginWebElmnt() {
+		return lnkLogin;
 	}
 }

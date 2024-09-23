@@ -1,5 +1,6 @@
 package pageObjects;
 
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
@@ -8,6 +9,8 @@ import org.openqa.selenium.support.PageFactory;
 public class BasePage {
 	
 	public WebDriver driver;
+	
+	public Logger logger;
 	
 	public BasePage(WebDriver driver)
 	{

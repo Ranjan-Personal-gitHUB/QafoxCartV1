@@ -13,7 +13,7 @@
     <classes>
         <!--   <class name="testCases.TC01_AccountRegistrationTest"/> -->
          <!-- <class name="testCases.TC02_LoginTest"/> -->
-          <class name="testCases.TC04_JavascriptExecutor_Test"/>
+          <class name="testCases.TC04_JSE_LoginTest"/>
      <!-- <class name="testCases.TC03_LoginDDTest"/> -->
     </classes>
   </test> <!-- Test -->

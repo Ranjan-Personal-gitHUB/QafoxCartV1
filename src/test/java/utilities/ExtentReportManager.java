@@ -33,10 +33,12 @@ public class ExtentReportManager implements ITestListener {
 		Date dt = new Date();
 		String currentDttm = df.format(dt);
 		
-		repName = "Test-Report-"+ currentDttm + ".html";
+		repName = "ExtentReportResults.html";
+
+		//repName = "ExtentReportResults"+ currentDttm + ".html";
 		
 		sparkReporter = new ExtentSparkReporter(".\\reports\\"+repName);
-		sparkReporter.config().setDocumentTitle("R a n j a n Test D o c m u e n t");
+		sparkReporter.config().setDocumentTitle("Ranjan Test Report");
 		sparkReporter.config().setReportName("Test-Report-"+ currentDttm);
 		sparkReporter.config().setTheme(Theme.DARK);
 		

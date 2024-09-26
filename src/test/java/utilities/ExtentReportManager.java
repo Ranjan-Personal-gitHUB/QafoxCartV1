@@ -77,7 +77,7 @@ public class ExtentReportManager implements ITestListener {
 	{
 		test = extent.createTest(result.getTestClass().getName());
 		test.assignCategory(result.getMethod().getGroups());
-		test.log(Status.FAIL, result.getName()+"Got Failed");		
+		test.log(Status.FAIL, result.getName()+"Got Failed.. Take the Screen shot now");		
 		test.log(Status.INFO, result.getThrowable().getMessage());
 		
 		try {

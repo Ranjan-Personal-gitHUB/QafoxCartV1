@@ -15,21 +15,15 @@ public class HomePage extends BasePage {
 	}
 
 	// Web elements List
-	/*
-	 * @FindBy(xpath = "//span[normalize-space()='My Account']") WebElement
-	 * lnkMyaccount;
-	 * 
-	 * @FindBy(xpath = "//a[normalize-space()='Register']") WebElement lnkRegister;
-	 * 
-	 * 
-	 * @FindBy(linkText = "Login") WebElement lnkLogin;
-	 */
 	
-	WebElement lnkMyaccount =driver.findElement(By.xpath("//span[normalize-space()='My Account']"));
-	
-	WebElement lnkRegister =driver.findElement(By.xpath("//a[normalize-space()='Register']"));
-	
-	WebElement lnkLogin =driver.findElement(By.linkText("Login"));
+	  @FindBy(xpath = "//span[normalize-space()='My Account']") WebElement
+	  lnkMyaccount;
+	  
+	  @FindBy(xpath = "//a[normalize-space()='Register']") WebElement lnkRegister;
+	  
+	  
+	  @FindBy(linkText = "Login") WebElement lnkLogin;
+	 
 	
 
 	// Corresponding Action methods for Web elments
@@ -46,17 +40,5 @@ public class HomePage extends BasePage {
 		lnkLogin.click();
 	}
 	
-	// Below added for JavaScriptExecutor Framework to run in Jenkins
-	public WebElement getMyAccountWebElmnt() {
-		logger.info("lnkMyaccount"+lnkMyaccount);
-		return lnkMyaccount;
-	}
 	
-	public WebElement getRegisterWebElmnt() {
-		return lnkRegister;
-	}
-	
-	public WebElement getLoginWebElmnt() {
-		return lnkLogin;
-	}
 }

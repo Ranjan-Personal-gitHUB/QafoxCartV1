@@ -120,6 +120,23 @@ public class BaseTestClass {
 		return randomNbr;
 	}
 
+	/*
+	 * public String captureScreen(String tname) throws IOException {
+	 * SimpleDateFormat df = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss"); Date dt =
+	 * new Date(); String currentDttm = df.format(dt);
+	 * 
+	 * TakesScreenshot takesScreenShot = (TakesScreenshot) driver; File sourceFile =
+	 * takesScreenShot.getScreenshotAs(OutputType.FILE);
+	 * 
+	 * String targetFilePtah =
+	 * System.getProperty("user.dir")+"\\screenshots\\"+tname+"_"+currentDttm; File
+	 * targetFile = new File(targetFilePtah);
+	 * 
+	 * sourceFile.renameTo(targetFile);
+	 * 
+	 * return targetFilePtah; }
+	 */
+	
 	public String captureScreen(String tname) throws IOException 
 	{
 		SimpleDateFormat df =  new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss");
@@ -129,12 +146,11 @@ public class BaseTestClass {
 		TakesScreenshot takesScreenShot = (TakesScreenshot) driver;
 		File sourceFile = takesScreenShot.getScreenshotAs(OutputType.FILE);
 		
-		String targetFilePtah = System.getProperty("user.dir")+"\\screenshots\\"+tname+"_"+currentDttm;
+		String targetFilePtah = System.getProperty("user.dir")+"\\screenshots\\"+tname+"_"+currentDttm+".png";
 		File targetFile = new File(targetFilePtah);
 		
 		sourceFile.renameTo(targetFile);
 	
 		return targetFilePtah;
 	}
-
 }

@@ -12,9 +12,10 @@
   
     <classes>
         <!--   <class name="testCases.TC01_AccountRegistrationTest"/> -->
-         <class name="testCases.TC02_LoginTest"/>
+         <!-- <class name="testCases.TC02_LoginTest"/> -->
           <!-- <class name="testCases.TC04_JSE_LoginTest"/> -->
            <!-- <class name="testCases.TC06_JSE_LoginDDTest"/> -->
+           <class name="testCases.TC05_JSE_AccountRegistrationTest" />
      <!-- <class name="testCases.TC03_LoginDDTest"/> -->
     </classes>
   </test> <!-- Test -->

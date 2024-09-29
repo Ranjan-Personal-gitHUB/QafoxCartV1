@@ -1,36 +1,35 @@
 package pageObjects;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
 
 public class LoginPage extends BasePage {
 
+	JavascriptExecutor js = (JavascriptExecutor) driver;
+	
 	public LoginPage(WebDriver driver) {
 		super(driver);
 	}
 
 	// Web elements List
-	@FindBy(xpath = "//input[@id='input-email']")
-	WebElement txtEmailAddress;
+	WebElement txtEmailAddress = driver.findElement(By.xpath("//input[@id='input-email']"));
 
-	@FindBy(xpath = "//input[@id='input-password']")
-	WebElement txtPassword;
+	WebElement txtPassword = driver.findElement(By.xpath("//input[@id='input-password']"));
 	
-
-	@FindBy(xpath = "//input[@value='Login']")
-	WebElement btnLogin;
+	WebElement btnLogin = driver.findElement(By.xpath("//input[@value='Login']"));
 
 	// Corresponding Action methods for Web elments
-	public void setEmail(String email) {
-		txtEmailAddress.sendKeys(email);
+	public void setEmail(String emailID) {
+		js.executeScript("arguments[0].value='" + emailID + "';", txtEmailAddress);
 	}
 
 	public void setPassword(String password) {
-		txtPassword.sendKeys(password);
+		js.executeScript("arguments[0].value='" + password + "';", txtPassword);
 	}
 	
 	public void clickLogin() {
-		btnLogin.click();
+		js.executeScript("arguments[0].click();", btnLogin);
 	}
 }

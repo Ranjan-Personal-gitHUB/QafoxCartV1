@@ -16,14 +16,12 @@ public class DataProviders {
 	@DataProvider(name="LoginData")
 	public String [][] getData() throws IOException
 	{
-		//String fileName = "C:\\Users\\Admin\\OneDrive\\Desktop\\LoginData.xlsx";
-		
-		//String fileName = "D:\\OIT\\BackendWorkspace\\QafoxCartV1\\testData\\LoginData.xlsx";
 		
 		String fileName = ".\\testData\\LoginData.xlsx";
 		
 		FileInputStream fis = new FileInputStream(fileName);
-        XSSFWorkbook workbook = new XSSFWorkbook(fis);
+        @SuppressWarnings("resource")
+		XSSFWorkbook workbook = new XSSFWorkbook(fis);
         XSSFSheet sheet = workbook.getSheet("Sheet1");
         XSSFRow row = sheet.getRow(0);
         int noOfRows = sheet.getPhysicalNumberOfRows();
@@ -38,23 +36,6 @@ public class DataProviders {
                 loginData[i - 1][j] = cell.getStringCellValue();
             }
         }
-		
-		/*
-		 *
-		ExcelUtility xlUtil = new ExcelUtility(path);
-		int totalRows = xlUtil.getRowCount("Sheet1");
-		int totalCols = xlUtil.getCellCount("Sheet1", 1);
-		
-		String loginData[][]=new String[totalRows][totalCols];
-		
-		for(int i=1;i<=totalRows;i++) // Rows start from 1 , ignore Header
-		{
-			for(int j=0;j<=totalCols;j++)  // Column start from 0
-			{
-				loginData[i-1][j]= xlUtil.getCellData("Sheet1", i, j);
-			}			
-		}
-		*/
 
 		return loginData;
 	}

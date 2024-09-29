@@ -9,7 +9,8 @@ import java.time.Duration;
 import java.util.Date;
 import java.util.Properties;
 
-import org.apache.commons.lang3.RandomStringUtils;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.TakesScreenshot;
@@ -22,8 +23,6 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
 // Parent class of all test cases
 // moved all common code like setup(), tearDown() , utility methods etc from individual test classes
@@ -108,34 +107,6 @@ public class BaseTestClass {
 		driver.quit();
 	}
 	
-	public String randomPasswordGenerater() {
-		String randomAlpha = RandomStringUtils.randomAlphabetic(5);
-		System.out.println("Random alphabet is -"  + randomAlpha);
-		return randomAlpha;
-	}
-	
-	public String randomPhoneNbrGenerater() {
-		String randomNbr = RandomStringUtils.randomNumeric(10);
-		System.out.println("Random Phone Nbr is -"  + randomNbr);
-		return randomNbr;
-	}
-
-	/*
-	 * public String captureScreen(String tname) throws IOException {
-	 * SimpleDateFormat df = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss"); Date dt =
-	 * new Date(); String currentDttm = df.format(dt);
-	 * 
-	 * TakesScreenshot takesScreenShot = (TakesScreenshot) driver; File sourceFile =
-	 * takesScreenShot.getScreenshotAs(OutputType.FILE);
-	 * 
-	 * String targetFilePtah =
-	 * System.getProperty("user.dir")+"\\screenshots\\"+tname+"_"+currentDttm; File
-	 * targetFile = new File(targetFilePtah);
-	 * 
-	 * sourceFile.renameTo(targetFile);
-	 * 
-	 * return targetFilePtah; }
-	 */
 	
 	public String captureScreen(String tname) throws IOException 
 	{

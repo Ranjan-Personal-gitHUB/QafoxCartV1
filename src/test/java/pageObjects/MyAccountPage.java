@@ -1,43 +1,44 @@
 package pageObjects;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
 
-import com.sun.tools.sjavac.Log;
 
 public class MyAccountPage extends BasePage {
 
+	public JavascriptExecutor js = (JavascriptExecutor) driver;
+	
 	public MyAccountPage(WebDriver driver) {
 		super(driver);
 	}
 
-	// Web elements List
-	@FindBy(xpath = "//h2[text()='My Account']")
-	WebElement msgHeading;
-	
-	// Add logout for testing Excel utility as multiple users need to login one after another logout
-	
-	@FindBy(xpath = "//div[@class='list-group']//a[text()='Logout']")
-	WebElement lnkLogout;
-	
+	// Web elements and their Actions List
 
 	public boolean isAccountValid() 
 	{
+		boolean accountDisplayed = false;
+		
 		try {
-			return msgHeading.isDisplayed();
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			return false;
-		}		
+			String accCreationMsg = driver
+					.findElement(By.xpath("//h2[text()='My Account']")).getText();
+			String isValidLogin = (String) js.executeScript("return arguments[0];", accCreationMsg);
+			System.out.println("isValidLogin"+isValidLogin);
+			if(isValidLogin!= null) {
+				accountDisplayed = true;
+			}
+		} catch (org.openqa.selenium.NoSuchElementException e) {
+			e.printStackTrace();
+			accountDisplayed = false;
+		}
+		return accountDisplayed;
 	}
 	
-
-	/*
-	 * @FindBy(xpath = "//input[@value='Login']") WebElement btnLogout;
-	 */
+	// Used for Data Driven test , as logout is needed to go back to Login screen again
 	public void clickLogout()
 	{
-		lnkLogout.click();
+		WebElement btnLogout = driver.findElement(By.xpath("//div[@class='list-group']//a[text()='Logout']"));
+		js.executeScript("arguments[0].click();",btnLogout);
 	}
 }
